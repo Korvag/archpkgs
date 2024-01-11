@@ -33,7 +33,9 @@ sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
 sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/config
 sudo cp ~/archpkgs/style.css /usr/local/etc/xdg/waybar/
+sudo cp ~/archpkgs/.bashrc ~/
+
 
 
 cd
-chmod +x ~/.config/hypr/btop.sh
+sudo chmod +x ~/.config/hypr/btop.sh
