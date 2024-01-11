@@ -2,10 +2,10 @@
 
 
 #installers
-sudo pacman -S meson ninja cmake scdoc pkgconf git
+sudo pacman -S meson ninja cmake scdoc pkgconf git --noconfirm
 
 #dependencies
-sudo pacman -S gtkmm3 jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev libpulse libn1 libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libsndio libevdev xkbregistry upower pango cairo file libglvnd libglvnd-core libjpeg-turbo libwebp hyprlang gcc
+sudo pacman -S gtkmm3 jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev libpulse libn1 libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libsndio libevdev xkbregistry upower pango cairo file libglvnd libglvnd-core libjpeg-turbo libwebp hyprlang gcc --noconfirm
 
 #yay
 git clone https://aur.archlinux.org/yay-bin
@@ -14,7 +14,7 @@ makepkg -si
 cd
 
 #packages
-sudo pacman -S hyprpaper neofetch btop waybar
+sudo pacman -S hyprpaper neofetch btop waybar --noconfirm
 
 cd Waybar
 meson build
@@ -46,7 +46,6 @@ sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/
 mv waybar.conf config
 sudo cp ~/archpkgs/style.css /usr/local/etc/xdg/waybar/
 sudo cp ~/archpkgs/.bashrc ~/
-
 
 
 cd
