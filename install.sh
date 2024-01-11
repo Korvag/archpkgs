@@ -16,6 +16,17 @@ cd
 #packages
 sudo pacman -S hyprpaper neofetch btop waybar
 
+cd Waybar
+meson build
+ninja -C build
+ninja -C build install
+cd
+
+cd hyprpaper
+make all
+cd
+
+
 git clone https://github.com/Korvag/wallpapers.git
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
 
@@ -24,7 +35,6 @@ cd sddm-sugar-candy-git
 makepkg -si
 cd
 
-mkdir /usr/local/etc/xdg/waybar
 
 sudo cp ~/wallpapers/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
