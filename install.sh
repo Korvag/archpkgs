@@ -14,8 +14,9 @@ makepkg -si
 cd
 
 #packages
-sudo pacman -S hyprpaper neofetch btop waybar --noconfirm
+sudo pacman -S hyprpaper neofetch btop --noconfirm
 
+git clone https://github.com/Alexays/Waybar
 cd Waybar
 meson build
 ninja -C build
