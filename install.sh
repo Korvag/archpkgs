@@ -24,6 +24,7 @@ cd sddm-sugar-candy-git
 makepkg -si
 cd
 
+mkdir /usr/local/etc/xdg/waybar
 
 sudo cp ~/wallpapers/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
@@ -31,7 +32,8 @@ sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
-sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/config
+sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/
+mv waybar.conf config
 sudo cp ~/archpkgs/style.css /usr/local/etc/xdg/waybar/
 sudo cp ~/archpkgs/.bashrc ~/
 
