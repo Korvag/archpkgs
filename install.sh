@@ -5,7 +5,7 @@
 sudo pacman -S meson ninja cmake scdoc pkgconf git --noconfirm
 
 #dependencies
-sudo pacman -S gtkmm3 jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev libpulse libn1 libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libsndio libevdev xkbregistry upower pango cairo file libglvnd libglvnd-core libjpeg-turbo libwebp hyprlang gcc --noconfirm
+sudo pacman -S gtkmm3 jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3 gobject-introspection libgirepository1.0 libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc
 
 #yay
 git clone https://aur.archlinux.org/yay-bin
