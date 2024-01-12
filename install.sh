@@ -2,10 +2,10 @@
 
 
 #installers
-sudo pacman -S meson ninja cmake scdoc pkgconf git --noconfirm
+sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
 
 #dependencies
-sudo pacman -S gtkmm3 jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3 gobject-introspection libgirepository1.0 libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc
+sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3 gobject-introspection libgirepository1.0 libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc
 
 #yay
 git clone https://aur.archlinux.org/yay-bin
@@ -14,7 +14,7 @@ makepkg -si
 cd
 
 #packages
-sudo pacman -S hyprpaper neofetch btop --noconfirm
+sudo pacman -S hyprpaper neofetch btop gtkmm3 --noconfirm
 
 git clone https://github.com/Alexays/Waybar
 cd Waybar
