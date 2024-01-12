@@ -18,9 +18,9 @@ sudo pacman -S hyprpaper neofetch btop gtkmm3 --noconfirm
 
 git clone https://github.com/Alexays/Waybar
 cd Waybar
-meson build
-ninja -C build
-ninja -C build install
+sudo meson build
+sudo ninja -C build
+sudo ninja -C build install
 cd
 
 cd hyprpaper
