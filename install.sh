@@ -24,11 +24,11 @@ makepkg -srci --noconfirm
 
 cd ~/Waybar
 sudo meson build
-sudo ninja -C build --noconfirm
-sudo ninja -C build install --noconfirm
+sudo ninja -C build
+sudo ninja -C build install
 
 cd ~/hyprpaper
-make all --noconfirm
+make all
 
 cd ~/sddm-sugar-candy-git
 makepkg -srci --noconfirm
