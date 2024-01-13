@@ -14,7 +14,6 @@ sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlo
 sudo pacman -S hyprpaper neofetch btop gtkmm3 --noconfirm
 
 git clone https://github.com/Alexays/Waybar
-git clone https://github.com/Korvag/wallpapers.git
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
 git clone https://aur.archlinux.org/yay-bin
 
@@ -35,9 +34,13 @@ cd ~/sddm-sugar-candy-git
 makepkg -srci --noconfirm
 cd
 
+mkdir wallpapers
+cd
+
 
 #set up configs
-sudo cp ~/wallpapers/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
+sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
+sudo cp ~/archpkgs/tree.jpg ~/wallpapers/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
