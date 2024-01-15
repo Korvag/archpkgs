@@ -11,7 +11,7 @@ sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlo
 
 
 #packages
-sudo pacman -S hyprpaper neofetch btop gtkmm3 --noconfirm
+sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar --noconfirm
 
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
