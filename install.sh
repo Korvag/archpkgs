@@ -11,7 +11,7 @@ sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlo
 
 
 #packages
-sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar "kitten themes" man --noconfirm
+sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar --noconfirm
 
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
@@ -39,6 +39,7 @@ sudo mkdir /usr/local/etc/xdg/
 sudo mkdir /usr/local/etc/xdg/waybar
 cd
 
+sudo pacman -S "kitten themes" man --noconfirm
 
 #set up configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
