@@ -35,6 +35,8 @@ makepkg -srci --noconfirm
 cd
 
 mkdir wallpapers
+mkdir /usr/local/etc/xdg/
+mkdir /usr/local/etc/xdg/waybar
 cd
 
 
@@ -46,9 +48,9 @@ sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
-#sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
-#sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
-#sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
+sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
+sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
+sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
 sudo cp ~/archpkgs/.bashrc ~/
 sudo cp ~/archpkgs/.nanorc ~/
 sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
