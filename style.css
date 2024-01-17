@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: transparent;
+    border-bottom: transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -83,21 +83,10 @@ button:hover {
 #memory,
 #disk,
 #temperature,
-#backlight,
 #network,
 #pulseaudio,
-#wireplumber,
 #custom-media,
 #tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#custom-volume,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
-}
-
 #window,
 #workspaces {
     margin: 0 4px;
@@ -161,10 +150,6 @@ label:focus {
     background-color: transparent;
 }
 
-#backlight {
-    background-color: transparent;
-}
-
 #network {
     background-color: transparent;
 }
@@ -181,15 +166,6 @@ label:focus {
 #pulseaudio.muted {
     background-color: transparent;
     color: #ffffff;
-}
-
-#wireplumber {
-    background-color: transparent;
-    color: #ffffff;
-}
-
-#wireplumber.muted {
-    background-color: transparent;
 }
 
 #custom-media {
@@ -227,64 +203,6 @@ label:focus {
     background-color: transparent;
 }
 
-#idle_inhibitor {
-    background-color: transparent;
-}
-
-#idle_inhibitor.activated {
-    background-color: transparent;
-    color: #ffffff;
-}
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
 #privacy {
     padding: 0;
 }
@@ -304,9 +222,4 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
-}
-
-#custom-volume {
-    background-color: transparent;
-    color: #ffffff;
 }
