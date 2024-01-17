@@ -11,7 +11,7 @@ sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlo
 
 
 #packages
-sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar --noconfirm
+sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar "kitten themes" --noconfirm
 
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
@@ -50,6 +50,8 @@ sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/
 sudo mv waybar.conf config
 sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
 sudo cp ~/archpkgs/.bashrc ~/
+sudo cp ~/archpkgs/.nanorc ~/
+sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
 
 
 #add startup script
