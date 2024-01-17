@@ -39,8 +39,6 @@ sudo mkdir /usr/local/etc/xdg/
 sudo mkdir /usr/local/etc/xdg/waybar
 cd
 
-sudo pacman -S "kitten themes" man --noconfirm
-
 #set up configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
 sudo cp ~/archpkgs/tree.jpg ~/wallpapers/
