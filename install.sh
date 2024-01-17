@@ -47,7 +47,8 @@ sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
 sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/
-sudo mv waybar.conf config
+sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
+sudo rm /usr/local/etc/xdg/waybar/waybar.conf
 sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
 sudo cp ~/archpkgs/.bashrc ~/
 sudo cp ~/archpkgs/.nanorc ~/
