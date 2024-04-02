@@ -6,8 +6,9 @@ sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
 
 
 #dependencies
-sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3 gobject-introspection libgirepository1.0\
-    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer --noconfirm
+sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev\
+    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer\
+    libnl libsndio xkbregistry --noconfirm
 
 
 #packages
