@@ -39,8 +39,8 @@ makepkg -srci --noconfirm
 cd
 
 mkdir wallpapers
-sudo mkdir /usr/local/etc/xdg/
-sudo mkdir /usr/local/etc/xdg/waybar
+#sudo mkdir /usr/local/etc/xdg/
+#sudo mkdir /usr/local/etc/xdg/waybar
 cd
 
 #set up configs
