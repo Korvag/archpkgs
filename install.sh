@@ -18,9 +18,9 @@ git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
 git clone https://aur.archlinux.org/yay-bin
 
-sudo pacman -S python -noconfirm
-sudo pacman -S python-pip -noconfirm
-sudo pacman -S python-packaging -noconfirm
+sudo pacman -S python --noconfirm
+sudo pacman -S python-pip --noconfirm
+sudo pacman -S python-packaging --noconfirm
 
 #build packages
 cd yay-bin
