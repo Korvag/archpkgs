@@ -66,3 +66,10 @@ sudo cp ~/archpkgs/paper.sh ~/
 #add startup script
 cd
 sudo chmod +x ~/.config/hypr/btop.sh
+
+read -p 'Reboot? [Y/N]: ' confirm
+if [ $confirm == 'y' ] || [ $confirm == 'Y' ]
+    then exec reboot
+    else exec clear
+fi
+
