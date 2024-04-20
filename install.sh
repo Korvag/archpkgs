@@ -57,6 +57,7 @@ sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
 sudo cp ~/archpkgs/.bashrc ~/
 sudo cp ~/archpkgs/.nanorc ~/
 sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
+sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
 
 
 #add startup script
