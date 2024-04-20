@@ -39,13 +39,15 @@ makepkg -srci --noconfirm
 cd
 
 mkdir wallpapers
+mkdir wallpapers/active
 #sudo mkdir /usr/local/etc/xdg/
 #sudo mkdir /usr/local/etc/xdg/waybar
 cd
 
 #set up configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
-sudo cp ~/archpkgs/tree.jpg ~/wallpapers/
+sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
+sudo cp ~/archpkgs/wall2.png ~/wallpapers/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
