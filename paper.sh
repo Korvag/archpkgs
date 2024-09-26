@@ -1,36 +1,46 @@
+
 #!/bin/bash
 
-mv ~/wallpapers/active/* ~/wallpapers/
+for i in $(find ~/wallpapers/active/ -type f | cut -d/ -f6);
+	do
+		mv ~/wallpapers/active/$i ~/wallpapers/$I
+	done
+
 entries=("$(ls -p ~/wallpapers/ | grep -v /)")
 
+echo $entries
+
+
 while true
-do
-	pkill hyprpaper
+	do
+		file=$(find ~/wallpapers/active/ -type f | cut -d/ -f6)
+		if [[ $file != "" ]]
+			then mv ~/wallpapers/active/$file ~/wallpapers/$file
+		fi
 
-	wallpaper=''
-	wp=''
-	path=$(shuf -en1 '$HOME/wallpapers/active/')
+#		ls ~/wallpapers/active/
 
-	wallpaper=(${entries[0]})
+#		entries=("$(ls -p ~/wallpapers/ | grep -v /)")
+#		echo $entries
 
-	entries=${entries[@]/$wallpaper}
-	entries=("${entries[@]}")
-	entries+=" $wallpaper"
+		wallpaper=(${entries[0]})
+		entries=${entries[@]/$wallpaper}
+#		echo $entries
+		entries+=" $wallpaper"
+#		echo $entries
 
+		mv ~/wallpapers/$wallpaper ~/wallpapers/active/$wallpaper
+#		ls ~/wallpapers/active/
 
-#	exec ~/paper.sh $wallpaper &
+		path='$HOME/wallpapers/active/'
+		wp=$wallpaper
 
-	mv ~/wallpapers/active/* ~/wallpapers/
-	mv ~/wallpapers/$wallpaper ~/wallpapers/active/
+		echo -e "preload = $path$wp\nwallpaper = eDP-1,$path$wp" > ~/.config/hypr/hyprpaper.conf
 
-	wp=$(shuf -en1 ~/wallpapers/active/$(ls ~/wallpapers/active/) | cut -d'/' -f6)
-	echo -e "preload = $path$wp\nwallpaper = eDP-1,$path$wp" > ~/.config/hypr/hyprpaper.conf
+#		cat ~/.config/hypr/hyprpaper.conf
 
+		pkill hyprpaper
+		hyprpaper &
 
-	pkill hyprpaper
-	hyprpaper &
-
-
-	sleep 300
-done
-
+		sleep 300
+	done
