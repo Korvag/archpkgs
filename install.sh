@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git clone https://github.com/Alexays/Waybar
+git clone https://aur.archlinux.org/sddm-sugar-dark.git
+git clone https://aur.archlinux.org/yay-bin
+
 
 #installers
 sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
@@ -13,10 +17,6 @@ sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlo
 
 #packages
 sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar --noconfirm
-
-git clone https://github.com/Alexays/Waybar
-git clone https://aur.archlinux.org/sddm-sugar-dark.git
-git clone https://aur.archlinux.org/yay-bin
 
 sudo pacman -S python --noconfirm
 sudo pacman -S python-pip --noconfirm
