@@ -8,6 +8,8 @@ if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls == '' ]
     else papers='n'
 fi
 
+echo $papers
+
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-dark.git
 git clone https://aur.archlinux.org/yay-bin
