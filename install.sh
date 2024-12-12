@@ -1,9 +1,10 @@
 #!/bin/bash
 
+papers=''
+
 read -p 'Do you want to install extra wallpapers? [Y/n]' walls
-if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls = '' ]
+if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls == '' ]
     then git clone https://github.com/D3Ext/aesthetic-wallpapers.git
-        papers='y'
     else papers='n'
 fi
 
