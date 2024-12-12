@@ -5,6 +5,7 @@ if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls = '' ]
     then git clone https://github.com/D3Ext/aesthetic-wallpapers.git
         $papers='y'
     else $papers='n'
+fi
 
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-dark.git
