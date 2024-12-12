@@ -80,6 +80,12 @@ fi
 cd
 sudo chmod +x ~/.config/hypr/btop.sh
 
+rm -rf ~/aesthetic-wallpapers
+rm -rf ~/sddm-sugar-dark
+rm -rf ~/Waybar
+rm -rf ~/yay-bin
+
+
 read -p 'Reboot? [Y/N]: ' confirm
 if [ $confirm == 'y' ] || [ $confirm == 'Y' ]
     then exec reboot
