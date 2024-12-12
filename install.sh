@@ -3,8 +3,8 @@
 read -p 'Do you want to install extra wallpapers? [Y/n]' walls
 if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls = '' ]
     then git clone https://github.com/D3Ext/aesthetic-wallpapers.git
-        $papers='y'
-    else $papers='n'
+        papers='y'
+    else papers='n'
 fi
 
 git clone https://github.com/Alexays/Waybar
