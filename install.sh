@@ -69,6 +69,9 @@ sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
 sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
 sudo cp ~/archpkgs/paper.sh ~/
 
+if [ $papers == 'y' ]
+    then sudo mv ~/aesthetic-wallpapers/images/* ~/wallpapers/
+fi
 
 #add startup script
 cd
