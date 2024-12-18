@@ -76,6 +76,9 @@ if [ $papers == 'y' ]
     then sudo mv ~/aesthetic-wallpapers/images/* ~/wallpapers/
 fi
 
+yay install python3-pip
+sudo pacman -S python-pywal
+
 #add startup script
 cd
 sudo chmod +x ~/.config/hypr/btop.sh
