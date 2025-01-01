@@ -58,7 +58,7 @@ cd
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
 sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
 sudo cp ~/archpkgs/wall2.png ~/wallpapers/
-sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
+sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
