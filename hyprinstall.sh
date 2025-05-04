@@ -14,7 +14,7 @@ sudo pacman -S hyprpaper neofetch btop gtkmm3 thunar --noconfirm
 
 git clone --recursive https://github.com/hyprwm/Hyprland
 git clone https://github.com/Alexays/Waybar
-git clone https://aur.archlinux.org/sddm-sugar-candy-git.git
+git clone https://aur.archlinux.org/sddm-sugar-dark.git
 git clone https://aur.archlinux.org/yay-bin
 
 
@@ -37,23 +37,24 @@ sudo ninja -C build install
 cd ~/hyprpaper
 make all
 
-cd ~/sddm-sugar-candy-git
-makepkg -srci --noconfirm
+cd ~/sddm-sugar-dark
+makepkg pkgbuild -srci --noconfirm
 cd
 
-mkdir wallpapers
+#mkdir wallpapers
 sudo mkdir /usr/local/etc/xdg/
 sudo mkdir /usr/local/etc/xdg/waybar
 sudo mkdir ~/wallpapers
 sudo mkdir ~/wallpapers/active
 sudo mkdir ~/.config/kitty
+sudo mkdir /usr/share/sddm/themes/sugar-dark/Backgrounds/
 cd
 
 #set up configs
-sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
+sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
 sudo cp ~/archpkgs/tree.jpg ~/wallpapers/
 sudo cp ~/archpkgs/wall2.png ~/wallpapers/
-sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
+sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
