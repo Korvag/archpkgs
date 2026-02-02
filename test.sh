@@ -2,14 +2,14 @@
 #!/bin/bash
 
 git clone https://aur.archlinux.org/yay-bin.git
-sudo pacman -S base_devel
+sudo pacman -S base-devel
 
 #packages
 sudo pacman -S fastfetch btop thunar --noconfirm
 
 sudo pacman -S python --noconfirm
 sudo pacman -S python-pip --noconfirm
-#sudo pacman -S python-packaging --noconfirm
+sudo pacman -S python-packaging --noconfirm
 
 #build packages
 cd yay-bin
