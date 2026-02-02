@@ -1,62 +1,35 @@
 
 #!/bin/bash
 
-#papers=''
-
-read -p 'Do you want to install extra wallpapers? [Y/n]: ' walls
-if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls == '' ]
-    then git clone https://github.com/D3Ext/aesthetic-wallpapers.git && papers='y'
-    else papers='n'
-fi
-
-echo $papers
-
-#git clone https://github.com/Alexays/Waybar
-git clone https://aur.archlinux.org/sddm-sugar-dark.git
-git clone https://aur.archlinux.org/yay-bin
-
-#echo "Clone Complete"
-#sleep 10
+git clone https://aur.archlinux.org/yay-bin.git
 
 #installers
-sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
-
-#echo "Meson, Ninja, CMake, SCDOC, PKGConf"
-#sleep 10
+#sudo pacman -S meson ninja cmake scdoc pkgconf base_devel --noconfirm
 
 #dependencies
-sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog gtk3 gobject-introspection \
-    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer \
-    libnl sndio --noconfirm
+#sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog gtk3 gobject-introspection \
+#    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer \
+#    libnl sndio --noconfirm
 
-#echo "Dependencies"
-#sleep 10
+sudo pacman -S base_devel
 
 #packages
-sudo pacman -S glib2-devel hyprpaper fastfetch btop gtkmm3 thunar --noconfirm
+sudo pacman -S fastfetch btop thunar --noconfirm
 
 sudo pacman -S python --noconfirm
 sudo pacman -S python-pip --noconfirm
 sudo pacman -S python-packaging --noconfirm
 
-#echo "Python"
-#sleep 10
-
 #build packages
 cd yay-bin
 makepkg -srci --noconfirm
 
-#cd ~/Waybar
-#sudo meson build
-#sudo ninja -C build
-#sudo ninja -C build install
+sudo pacman -S hyprpaper
 
-cd ~/hyprpaper
-make all
-
-cd ~/sddm-sugar-dark
-makepkg pkgbuild -srci --noconfirm
-cd
+#cd ~/sddm-sugar-dark
+#makepkg pkgbuild -srci --noconfirm
+#cd
+sudo yay -S sddm-sugar-dark
 
 mkdir wallpapers
 mkdir wallpapers/active
@@ -82,10 +55,6 @@ sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
 sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
 sudo cp ~/archpkgs/paper.sh ~/
 
-if [ $papers == 'y' ]
-    then sudo mv ~/aesthetic-wallpapers/images/* ~/wallpapers/
-fi
-
 yay install python3-pip
 sudo pacman -S python-pywal
 
@@ -93,10 +62,7 @@ sudo pacman -S python-pywal
 cd
 sudo chmod +x ~/.config/hypr/btop.sh
 
-rm -rf ~/aesthetic-wallpapers
-rm -rf ~/sddm-sugar-dark
 rm -rf ~/yay-bin
-#sudo rm -rf ~/Waybar
 
 read -p 'Reboot? [Y/N]: ' confirm
 if [ $confirm == 'y' ] || [ $confirm == 'Y' ]
