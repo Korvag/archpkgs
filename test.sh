@@ -2,7 +2,7 @@
 #!/bin/bash
 
 git clone https://aur.archlinux.org/yay-bin.git
-sudo pacman -S base-devel
+sudo pacman -S base-devel --noconfirm
 
 #packages
 sudo pacman -S fastfetch btop thunar --noconfirm
@@ -15,8 +15,8 @@ sudo pacman -S python-packaging --noconfirm
 cd yay-bin
 makepkg -srci --noconfirm
 
-sudo pacman -S hyprpaper
-sudo yay -S sddm-sugar-dark
+sudo pacman -S hyprpaper --noconfirm
+yay -S sddm-sugar-dark --noconfirm
 
 mkdir wallpapers
 mkdir wallpapers/active
@@ -38,7 +38,7 @@ sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
 sudo cp ~/archpkgs/paper.sh ~/
 
 yay install python3-pip
-sudo pacman -S python-pywal
+sudo pacman -S python-pywal --noconfirm
 
 #add startup script
 cd
