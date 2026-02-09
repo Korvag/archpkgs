@@ -29,7 +29,7 @@ mkdir wallpapers/active
 cd
 
 if [ $clone -ne 0 ]; then
-    clone https://github.com/Korvag/archpkgs.git
+    git clone https://github.com/Korvag/archpkgs.git
 else 
     :
 fi
