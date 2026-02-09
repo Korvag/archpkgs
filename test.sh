@@ -3,6 +3,8 @@
 
 if [ -e "~/archpkgs/tree.jpg" ]; then
     clone=0
+else
+    clone=1
 fi
 
 git clone https://aur.archlinux.org/yay-bin.git
@@ -28,6 +30,8 @@ cd
 
 if [ $clone -ne 0 ]; then
     clone https://github.com/Korvag/archpkgs.git
+else 
+    :
 fi
 
 #set up configs
@@ -56,6 +60,8 @@ rm -rf ~/yay-bin
 
 if [ -e "~/archpkgs/tree.jpg" ]; then
     rm -rf ~/archpkgs
+else
+    :
 fi
 
 read -p 'Reboot? [Y/N]: ' confirm
