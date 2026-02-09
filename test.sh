@@ -1,6 +1,10 @@
 
 #!/bin/bash
 
+if [ -e "~/archpkgs/tree.jpg" ]; then
+    clone=0
+fi
+
 git clone https://aur.archlinux.org/yay-bin.git
 sudo pacman -S base-devel --noconfirm
 
@@ -21,6 +25,10 @@ yay -S sddm-sugar-dark --noconfirm
 mkdir wallpapers
 mkdir wallpapers/active
 cd
+
+if [ $clone -ne 0 ]; then
+    clone https://github.com/Korvag/archpkgs.git
+fi
 
 #set up configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
@@ -45,6 +53,10 @@ cd
 sudo chmod +x ~/.config/hypr/btop.sh
 
 rm -rf ~/yay-bin
+
+if [ -e "~/archpkgs/tree.jpg" ]; then
+    rm -rf ~/archpkgs
+fi
 
 read -p 'Reboot? [Y/N]: ' confirm
 if [ $confirm == 'y' ] || [ $confirm == 'Y' ]
