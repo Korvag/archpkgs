@@ -65,7 +65,7 @@ else
 fi
 
 read -p 'Reboot? [Y/N]: ' confirm
-if [ $confirm == 'y' ] || [ $confirm == 'Y' ]
+if [ $confirm == 'y' ] || [ $confirm == 'Y' ];
     then exec reboot
     else exec clear
 fi
