@@ -3,7 +3,7 @@
 
 for i in $(find ~/wallpapers/active/ -type f | cut -d/ -f6);
 	do
-		mv ~/wallpapers/active/$i ~/wallpapers/$I
+		mv ~/wallpapers/active/$i ~/wallpapers/$i
 	done
 
 entries=("$(ls -p ~/wallpapers/ | grep -v /)")
