@@ -35,9 +35,9 @@ else
 fi
 
 #set up configs
-sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
-sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
-sudo cp ~/archpkgs/wall2.png ~/wallpapers/
+sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/tree.jpg
+sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/tree.jpg
+sudo cp ~/archpkgs/wall2.png ~/wallpapers/wall2.png
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
