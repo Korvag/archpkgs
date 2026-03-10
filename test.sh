@@ -24,8 +24,10 @@ makepkg -srci --noconfirm
 sudo pacman -S hyprpaper --noconfirm
 yay -S sddm-sugar-dark --noconfirm
 
-mkdir wallpapers
-mkdir wallpapers/active
+cd
+mkdir ~/wallpapers
+mkdir ~/wallpapers/active
+mkdir /usr/share/sddm/themes/sugar-dark/Backgrounds
 cd
 
 if [ $clone -ne 0 ]; then
