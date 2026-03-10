@@ -18,7 +18,3 @@ wifi() {
 	pass=$2
 	sudo nmcli dev wifi connect $net password $pass
 }
-
-# change terminal colorscheme
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
