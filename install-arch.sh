@@ -73,7 +73,7 @@ mount "${part_boot}" /mnt/boot
 pacman-key --init
 pacman-key --populate archlinux
 
-pacman -S f2fs-tools
+pacman -S f2fs-tools --noconfirm
 
 ### Install and configure the basic system ###
 cat >>/etc/pacman.conf <<EOF
