@@ -9,10 +9,6 @@ REPO_URL="https://s3.eu-west-2.amazonaws.com/mdaffin-arch/repo/x86_64"
 MIRRORLIST_URL="https://archlinux.org/mirrorlist/?country=US&protocol=https&use_mirror_status=on"
 
 pacman -Sy --noconfirm pacman-contrib dialog
-pacman-key --init
-pacman-key --populate archlinux
-
-pacman -S f2fs-tools
 
 echo "Updating mirror list"
 curl -s "$MIRRORLIST_URL" | \
@@ -73,6 +69,11 @@ swapon "${part_swap}"
 mount "${part_root}" /mnt
 mkdir /mnt/boot
 mount "${part_boot}" /mnt/boot
+
+pacman-key --init
+pacman-key --populate archlinux
+
+pacman -S f2fs-tools
 
 ### Install and configure the basic system ###
 cat >>/etc/pacman.conf <<EOF
