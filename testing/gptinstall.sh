@@ -37,13 +37,13 @@ sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
 progress_bar "Installed build tools"
 
 # dependencies
-sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev \
+sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog gtk3 gobject-introspection \
     libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer \
-    libnl libsndio xkbregistry --noconfirm
+    libnl sndio --noconfirm
 progress_bar "Dependencies installed"
 
 # packages
-sudo pacman -S glib2-devel hyprpaper neofetch btop gtkmm3 thunar --noconfirm
+sudo pacman -S glib2-devel hyprpaper fastfetch btop gtkmm3 thunar --noconfirm
 progress_bar "Base packages installed"
 
 sudo pacman -S python python-pip python-packaging --noconfirm
