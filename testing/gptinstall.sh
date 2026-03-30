@@ -83,7 +83,7 @@ sudo cp ~/archpkgs/wall2.png ~/wallpapers/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
-sudo cp ~/archpkgs/config/*.conf ~/.config/hypr/
+sudo cp ~/archpkgs/testing/config/*.conf ~/.config/hypr/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
 sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
 sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
