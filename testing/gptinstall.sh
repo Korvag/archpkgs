@@ -76,6 +76,8 @@ progress_bar "SDDM theme built"
 mkdir -p wallpapers/active
 progress_bar "Directories created"
 
+mkdir -p ~/.config/hypr/config/
+
 # configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
 sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
@@ -83,7 +85,8 @@ sudo cp ~/archpkgs/wall2.png ~/wallpapers/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
-sudo cp ~/archpkgs/testing/config/*.conf ~/.config/hypr/
+sudo cp ~/archpkgs/testing/hyprland.conf ~/.config/hypr/
+sudo cp ~/archpkgs/testing/config/*.conf ~/.config/hypr/config/
 sudo cp ~/archpkgs/btop.sh ~/.config/hypr
 sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
 sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
