@@ -10,6 +10,7 @@ entries=("$(ls -p ~/wallpapers/ | grep -v /)")
 
 echo $entries
 
+monitor=("$(hyprctl monitors | grep -m1 Monitor | cut -d' ' -f2)")
 
 while true
 	do
@@ -35,7 +36,7 @@ while true
 		path='$HOME/wallpapers/active/'
 		wp=$wallpaper
 
-		echo -e "preload = $path$wp\nwallpaper = eDP-1,$path$wp" > ~/.config/hypr/hyprpaper.conf
+		echo -e "preload = $path$wp\nwallpaper = $monitor,$path$wp" > ~/.config/hypr/hyprpaper.conf
 
 #		cat ~/.config/hypr/hyprpaper.conf
 
