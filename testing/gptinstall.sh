@@ -32,20 +32,21 @@ git clone https://aur.archlinux.org/sddm-sugar-dark.git
 git clone https://aur.archlinux.org/yay-bin
 progress_bar "Repositories cloned"
 
-# installers
-sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
+# core build environment
+sudo pacman -S --needed base-devel meson ninja cmake scdoc --noconfirm
 progress_bar "Installed build tools"
 
 # dependencies
 sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog gtk3 gobject-introspection \
-    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer \
+    libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo libglvnd libjpeg-turbo libwebp hyprlang pamixer \
     libnl sndio --noconfirm
 progress_bar "Dependencies installed"
 
 # packages
-sudo pacman -S glib2-devel hyprpaper fastfetch btop gtkmm3 thunar --noconfirm
+sudo pacman -S hyprpaper fastfetch btop gtkmm3 thunar --noconfirm
 progress_bar "Base packages installed"
 
+# python
 sudo pacman -S python python-pip python-packaging --noconfirm
 progress_bar "Python setup done"
 
