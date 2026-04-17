@@ -55,6 +55,8 @@ cd yay-bin
 makepkg -srci --noconfirm
 progress_bar "yay built"
 
+yay -S libcava
+
 # build waybar
 cd ~/Waybar
 sudo meson build
@@ -76,8 +78,8 @@ progress_bar "SDDM theme built"
 # setup dirs
 mkdir -p wallpapers/active
 progress_bar "Directories created"
-
 mkdir -p ~/.config/hypr/config/
+sudo mkdir /usr/share/sddm/themes/sugar-dark/Backgrounds/
 
 # configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
